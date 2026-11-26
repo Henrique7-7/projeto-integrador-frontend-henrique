@@ -54,6 +54,18 @@
 <img src="assets/images/calca.jpeg" alt="Calça fitness">
 </section>
 <section>
+    <h2>Vídeo</h2>
+    <!-- preload="metadata": carrega só a duração e o tamanho do vídeo,
+         não o vídeo inteiro. Assim a página abre mais rápido e só baixa
+         o vídeo se a pessoa der play. -->
+    <video controls width="300" poster="assets/videos/poster.jpg" preload="metadata">
+        <source src="assets/videos/macaquinho.mp4" type="video/mp4">
+        <source src="assets/videos/macaquinho.webm" type="video/webm">
+        <track kind="subtitles" src="assets/videos/macaquinho.vtt" srclang="pt" label="Português" default>
+        <p>Seu navegador não suporta vídeo.</p>
+    </video>
+</section>
+<section>
     <h2>Avalie um produto</h2>
 
     <form>
