@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Roupas Fitness</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald&display=swap">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
     <p>Este projeto tem como objetivo apresentar um catalogo de roupas fitness, reunindo peças de diferentes tamanhos para quem busca conforto, estilo e praticidade durante os treinos.</p>
     </header>
     <main>
-        <section>
+        <section class="secao" id="produtos">
     <h2>Produtos</h2>
     <ul>
     <li>Leggings</li>
@@ -44,16 +45,16 @@
     </tr>
 </table>
 </section>
-<a href="https://www.gov.br/saude/pt-br/composicao/saps/academia-da-saude" target="_blank" rel="noopener noreferrer">
+<a class="link-externo" href="https://www.gov.br/saude/pt-br/composicao/saps/academia-da-saude" target="_blank" rel="noopener noreferrer">
     Saiba mais sobre atividade física
 </a>
-<section>
+<section class="secao">
     <h2>Imagens</h2>
 <img src="assets/images/top.jpeg" alt="Top fitness">
 <img src="assets/images/short.jpeg" alt="Short fitness">
 <img src="assets/images/calca.jpeg" alt="Calça fitness">
 </section>
-<section>
+<section class="secao">
     <h2>Vídeo</h2>
     <!-- preload="metadata": carrega só a duração e o tamanho do vídeo,
          não o vídeo inteiro. Assim a página abre mais rápido e só baixa
@@ -65,7 +66,7 @@
         <p>Seu navegador não suporta vídeo.</p>
     </video>
 </section>
-<section>
+<section class="secao">
     <h2>Avalie um produto</h2>
 
     <form>
@@ -108,7 +109,7 @@
 <label for="nota">Avaliação:</label>
 <input type="number" id="nota" name="nota" min="1" max="5">
 
-<button type="submit">Enviar avaliação</button>
+<button class="botao" type="submit">Enviar avaliação</button>
 
 </fieldset>
 
