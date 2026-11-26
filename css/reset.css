@@ -1,0 +1,6 @@
+/* reset: tira os espaços que o navegador coloca sozinho */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
