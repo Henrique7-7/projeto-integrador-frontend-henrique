@@ -1,0 +1,98 @@
+/* ===== Cores e fontes da UpBella ===== */
+:root {
+    --roxo: #4b1c6e;
+    --lilas: #8e56b8;
+    --rosa: #dc016b;
+    --fundo: #f8f8f1;
+    --verde: #a8f0de;
+    --fonte-texto: 'DM Sans', Arial, sans-serif;
+    --fonte-titulo: 'Oswald', Arial, sans-serif;
+    --espaco: 1rem;
+}
+
+/* ===== Página ===== */
+/* font-size em rem: rem é relativo ao tamanho padrão do navegador (16px).
+   Se a pessoa aumentar a fonte nas configurações, o site acompanha. */
+body {
+    background-color: var(--fundo);
+    color: #333;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--roxo);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--espaco);
+}
+/* ===== Seções (classe reutilizável + box model) ===== */
+.secao {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid var(--lilas);
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+/* ID: só a seção de produtos tem borda rosa */
+#produtos {
+    border-color: var(--rosa);
+}
+
+/* ===== Lista ===== */
+.secao ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== Tabela ===== */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid var(--lilas);
+    padding: 0.5rem 1rem;
+}
+
+th {
+    background-color: var(--roxo);
+    color: white;
+}
+
+/* ===== Links: os 4 estados nesta ordem (LoVe HAte) ===== */
+.link-externo:link {
+    color: var(--roxo);
+}
+
+.link-externo:visited {
+    color: var(--lilas);
+}
+
+.link-externo:hover {
+    color: var(--rosa);
+}
+
+.link-externo:active {
+    color: var(--verde);
+}
+
+/* ===== Botão ===== */
+.botao {
+    background-color: var(--rosa);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
